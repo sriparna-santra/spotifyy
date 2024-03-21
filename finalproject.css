@@ -1,0 +1,790 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    font-weight:600;
+    overflow: hidden;/*we apply overflow hidden to hide the holl body.....then we go main contant to overflow scroll then only scroll the main content */
+}
+#main{
+    display: flex;
+    height: 100vh;
+    padding: 0.4rem;
+}
+#sidebar{
+    background-color: rgb(0, 0, 0);
+    height:39rem;
+    width: 28rem;
+    border-radius: 0.5rem;
+    margin-right:0.2rem;
+
+}
+.main-content{
+    background-color: rgba(232, 227, 227,0.1) ;
+    
+    height: 38rem;
+    /* border: 2px solid yellow; */
+    flex:1;
+    border-radius: 0.5rem;
+    margin-left:0.2rem;
+    overflow: hidden;
+
+}
+
+
+
+
+#subtopsidebar{
+    height: 6rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgba(232, 227, 227,0.1) ;
+
+}
+#subtopsidebar .topside{
+    padding: 1rem;
+    
+}
+
+#subtopsidebar .topside i{
+    color: rgb(255, 255, 255,0.8);
+    margin-left: 1rem;
+}
+#subtopsidebar .topside .onlya{
+    color:rgb(255, 255, 255,0.8);
+    text-decoration: none;
+    margin-left:1.5rem ;
+}
+#subtopsidebar .topside .onlya:hover{
+    color: white;
+    font-weight:800;
+    transition: 0.5s;
+}
+
+#subtopsidebar .topside i:hover{
+    color: white;
+    font-weight:800;
+    transition: 0.5s;
+
+}
+#sidebar #subbottomsidebar{
+    height: 28.5rem;
+    background-color: rgba(232, 227, 227,0.1) ;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+#sidebar #subbottomsidebar #bottommain{
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#subbottomsidebar #bottommain .library_icon{
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255,0.8);
+}
+#libaryicon{
+    margin-right: 1.5rem;
+}
+#subbottomsidebar #bottommain .library_icon:hover{
+    color: white;
+    font-weight:bolder;
+    transition: 0.5s;
+}
+#subbottomsidebar #bottommain #subbottommain{
+    width: 5rem;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+}
+#subbottomsidebar #bottommain #subbottommain a{
+    color: rgb(255, 255, 255,0.8);
+    /* background-color: aqua; */
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#subbottomsidebar #bottommain #subbottommain a:hover{
+    background-color:rgba(132, 131, 131, 0.3);
+    
+}
+#subbottomsidebar #bottommain #subbottommain i:hover{
+    color: white;
+    font-weight:bolder;
+}
+
+
+/* nave bar bottom >>> two buttons platlist and artists  */
+
+#sidebar #subbottomsidebar #twobuttons{
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+#sidebar #subbottomsidebar #twobuttons .buttun2{
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    background-color: rgb(57, 56, 56,0.5);
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+#sidebar #subbottomsidebar #twobuttons .buttun2:hover{
+    color: rgb(255, 255, 255,2);
+    background-color: rgb(57, 56, 56,0.8);
+    transition: 0.5s;
+
+}
+#sidebar #subbottomsidebar #twobuttons .buttun2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255,0.8);
+}
+#sidebar #subbottomsidebar #twobuttons .buttun2 a:hover{
+    color: rgb(255, 255, 255,2);
+    transition: 0.5s;
+}
+
+/* side bar search button */
+#sidescroolpart{
+    height: 24rem;    
+    border-radius: 1.5rem;
+    padding-right:0.5rem;
+    margin-right: -1.9rem;
+    overflow: scroll;
+    scrollbar-color: black black;
+}
+#sidescroolpart #sidebarsearch{
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+#sidescroolpart #sidebarsearch a{
+    text-decoration: none;
+    color: rgb(255, 255, 255,0.8);
+    font-size: 1.1rem;
+    
+}
+#sidescroolpart #sidebarsearch #searchside{
+   height:2rem;
+   width: 2rem;
+   border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sidescroolpart #sidebarsearch #searchside:hover{
+    background-color: rgb(235, 236, 236,0.2);
+}
+
+/* side bar actor list */
+.sidelikedsongs{
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255,0.6);
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+}
+.sidelikedsongs:hover{
+    background-color: rgb(198, 195, 195,0.2);
+    border-radius: 1rem;
+}
+.sidelikedsongs img{
+   border-radius: 0.5rem;
+    margin-left:0.5rem;
+    height: 3rem;
+    width: 3rem;
+
+}
+.sidelikedsongs #sidelikedsongsdiv2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+.sidelikedsongs #sidelikedsongsdiv2 #like{
+    color: rgb(59, 221, 59);
+    font-size: 1rem;
+}
+.sidelikedsongs #sidelikedsongsdiv2 #sidelikedsongsdiv3{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+.sidelikedsongs #sidelikedsongsdiv2 #sidelikedsongsdiv3 i{
+    color: rgb(59, 221, 59);
+    margin-right: 1rem;
+
+}
+.sidelikedsongs #sidelikedsongsdiv2 #sidelikedsongsdiv3 #jj{
+    color: azure;
+    margin-right: 1rem;
+}
+
+/* side bar arijit section */
+#sidebaractorpic{
+    border-radius:50%;
+    margin-left:0.5rem;
+    height: 3rem;
+    width: 3rem;
+}
+.sidelikedsongs #sidebaractordiv2{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    margin-left: 1rem;
+}
+.sidelikedsongs #sidebaractordiv2 #sidebaractorname{
+    color: white;
+ }
+
+
+/* main content  */
+#main-content-fixed-div{
+    background-color:rgba(53, 53, 242, 0.53);
+}
+
+#main-content-fixed-top-div{
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#main-content-fixed-top-div #main-content-top-left .main-top-left-botton-img{
+    height: 1rem;
+    width: 1rem;
+}
+#main-content-fixed-top-div #main-content-top-left{
+    display: flex;
+}
+#main-content-fixed-top-div #main-content-top-left .main-top-left-botton{
+    height: 2.2rem;
+    width: 2.2rem;
+    margin: 0.2rem;
+    border-radius: 50%;
+    background-color: rgb(9, 9, 9,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#main-content-top-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    justify-content: space-between;
+}
+.main-content-top-right-buttons{
+    text-decoration: none;
+    color: white;
+}
+#main-content-top-right-button1{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: 800;
+}
+#main-content-top-right-button1:hover{
+    transform: scale(1.05);/* very importent*************** */
+    box-shadow: 2px 3px 5px black;
+}
+#main-content-top-right-button2{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+#main-content-top-right-button2:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+}
+#main-content-top-right-button3{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#main-content-top-right-button3:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+}
+#s-cornar{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#s-cornar-in{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(64, 245, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+#s-cornar:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+#main-content-fixed-bottom-div{
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+}
+
+#main-content-fixed-bottom-div .main-content-fixed-bottom-div-buttons{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 255, 255,0.1);
+    border-radius: 1rem;
+    margin-right:0.5rem ;
+}
+
+#main-content-fixed-bottom-div .main-content-fixed-bottom-div-buttons:checked{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* main-content-scrool-div */
+
+#main-content-scrool-div{
+    padding: 0.5rem;
+    scrollbar-color: black black;
+    width: 65.8rem;
+    overflow: scroll;
+    height: 31.3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+#main-content-scrool-top-pic-div{
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+    
+}
+#main-content-scrool-top-pic-div div a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    width: 18rem;
+    height: 3rem;
+    background-color: rgb(180, 172, 172,0.3);
+    border-radius: 0rem 0.4rem 0.4rem 0rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    
+}
+#main-content-scrool-top-pic-div div{
+    display: flex;
+    margin-right:1.5rem ;
+}
+
+#main-content-scrool-top-pic-div div img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.4rem 0rem 0rem 0.4rem;
+}
+
+/* contentsssssssssssssssssssssssssssssssss */
+#main-content-scrool-middile-main-divs{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-content-scrool-middile-div-pics{
+    text-decoration: none;
+    color: white;
+   
+}
+.main-content-scrool-middile-div-pics .mainpic{
+    height: 11rem;
+    width: 11rem;
+    border-radius: 1rem;
+}
+.main-content-scrool-middile-div-pics .mainpic:hover{
+    
+    transform: scale(1.03);
+    transition: 0.5s;
+    border-radius: 1rem;
+}
+.main-content-scrool-middile-div{
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 1rem;
+    height: 240px;
+}
+.main-content-scrool-middile-div:hover{
+    background-color: rgb(220, 216, 216,0.2);
+}
+.main-comntent-name-of-singer{
+    font-size: 0.9rem;
+    text-align: start;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    width: 10rem;
+       /* ***************************************** */
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.main-comntent-nam-of-singer::marker{
+    color: blue;
+    font-size: 1.2rem;
+}
+.main-comntent-nam-of-singer{
+    text-align: start;
+    width: 10rem;
+       /* ***************************************** */
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    font-size: 0.8rem;
+}
+.main-comntent-about-of-singer {
+    color: rgb(204, 200, 200,0.6);
+    font-size: 0.8rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: start;
+    width: 10rem;
+   /* ***************************************** */
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.main-comntent-about-of-singer a{
+    color: rgb(204, 200, 200,0.6);
+    font-size: 0.8rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: start;
+    width: 10rem;
+    white-space: wrap; 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-decoration: none;
+}
+.main-comntent-about-of-singer a:hover{
+    text-decoration: underline;
+}
+
+.play_musicbar{
+    height: 3rem;
+    width: 3rem;
+    position:relative;
+    top: -5.625rem;
+    left: 3.625rem;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/* ***************** */
+.main-content-scrool-middile-div:hover .play_musicbar{
+    top: -7.5rem;
+    transition: 0.5s;
+    opacity: 1;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main-content-scrool-div-text-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+#main-content-scrool-div-text-top a{
+    text-decoration: none;
+    color: white;
+}
+#main-content-scrool-div-text-top-left{
+    font-size: 1.5rem;
+
+}
+#main-content-scrool-div-text-top-right{
+    color: rgb(208, 202, 202,0.2);
+}
+#main-content-scrool-div-text-top-right:hover,#main-content-scrool-div-text-top-left:hover{
+    text-decoration: underline;
+}
+
+
+/* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+#footer{
+    width: 100%;
+    padding: 0.6rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+#footer-body{
+    display: flex;
+    justify-content: space-between;
+}
+#footer-body{
+    display: flex;
+}
+#footer-main-body-left{
+    display: flex;
+}
+#footer-body-left-items{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+#footer-body-left-items span{
+    color: aliceblue;
+    padding-bottom:1rem;
+    font-size: 1.2rem;
+}
+#footer-body-left-items a{
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+#footer-body-left-items a:hover{
+    color: rgb(224, 230, 235);
+    text-decoration: underline;
+}
+#footer-body-right{
+    padding-right: 3rem;
+    display: flex;
+
+}
+
+#footer-body-right a {
+    color: black;
+    text-decoration: none;
+}
+#footer-body-right a div{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    background-color: rgb(255, 255, 255,0.1);
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+
+}
+#footer-body-right a div:hover{
+   
+    background-color: rgb(242, 244, 245,0.4);
+    
+}
+#footer-body-right a div:hover i{
+    transform: scale(1.3);        
+}
+#footer-body-right a div i{
+    font-size: 1.2rem;
+    color: white;
+    
+}
+
+#hr{
+    color: aliceblue;
+    margin: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem
+}
+
+#footer-main-last-div{
+    display: flex;
+    justify-content: space-between;
+    margin:2rem ;
+}
+#footer-last-div-left a{
+    color: rgb(250, 249, 249,0.6);
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+#footer-last-div-left a:hover{
+    background-color: rgba(232, 227, 227,0.1) ;
+    transform: scale(1.5);
+    margin-right: 0.5rem; 
+}
+#footer-last-div-right{
+    color: white;
+}
+#foot-picof-music{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+#music-pic{
+    background-color: rgb(0, 0, 0);
+    width:33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-left-middile-bottom{
+    text-decoration: none;
+    color: rgb(236, 232, 232,0.5);
+    font-weight:400 ;
+    font-size: 0.8rem;
+}
+#footer-left-middile-bottom:hover{
+    color: white;    
+    text-decoration: underline;
+}
+#footer-of-last-left-middle-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5rem;
+    width:15rem;
+    
+}
+#footer-left-middile-top{
+    color: white;
+    text-decoration: none;
+}
+#footer-left-middile-top:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+
+#tikbutton i{
+    background-color: rgb(26, 239, 65);
+    border-radius: 50%;
+    font-size: 1.2rem;
+
+
+}
+#tikbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 3rem;
+    padding-left: 0.5rem;
+}
+#music{
+    position: fixed;
+    bottom: 0px;
+    width: 99%;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#music-player{
+    background-color: black;
+        padding: 0.5rem;
+        width: 33%;
+        /* width: 33; */
+
+}
+
+#music-player-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8rem;
+
+}
+#music-player-top img{
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+}
+#music-player-top img:hover{
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+#music-player-top .footpic{
+    height: 1rem;
+    width: 1rem;
+    padding-left: 2rem;
+}
+#footplaybut{
+    height: 1.5rem;
+    width: 1.5rem;
+        padding-left: 2rem;
+}
+#music-player-bottom{
+    display: flex;
+    justify-content: center;
+}
+#range{
+    width: 80%;
+    margin-top: 0.8rem;
+    font-size: 200em;
+}
+
+
+
+
+#music-last-part{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+}
+.lastparticons{
+    height: 2.3rem;
+    width: 2.3rem;
+    margin-right: 1rem;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+}
+.lastparticons:hover{
+    
+    opacity: 1;
+}
+#music-last-part i{
+    color: aliceblue;
+    margin-right:1rem ;
+    margin-left: 0.5rem;
+}
+#last-but-2and3{
+    height: 1.5rem;
+    width: 1.5rem;
+}
